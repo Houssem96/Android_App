@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/underground"
+    tools:context=".vehicule">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#4ca7b3"
+        android:text="© WantIt 2019 | Language : English "
+
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="485dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="397dp"
+                android:layout_height="150dp"
+                android:background="@drawable/homeappliance"
+                android:gravity="center_vertical"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textSize="70dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Veh"
+            android:layout_width="215dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="77dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="23dp"
+            android:background="#f5f5b1"
+            android:text="Home appliances"
+            android:textColor="#080808"
+            android:textSize="38dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="262dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="316dp"
+            android:layout_height="249dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </LinearLayout>
+</RelativeLayout>

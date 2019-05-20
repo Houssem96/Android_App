@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arriereplan"
+    tools:context=".page_enchere">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="671dp">
+
+                <ImageView
+                    android:id="@+id/v_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/blur"
+                    android:clickable="true"
+                    android:onClick="view_image">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="475dp"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                <TextView
+                    android:id="@+id/initialPrice"
+                    android:layout_width="114dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="296dp"
+                    android:text="Initial Price :"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="180dp"
+                    android:layout_height="41dp"
+                    android:layout_alignTop="@+id/initialPrice"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginEnd="59dp"
+                    android:layout_marginRight="59dp"
+                    android:text="initialPrice"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/initialPrice"
+                    android:layout_alignStart="@+id/initialPrice"
+
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="-89dp"
+                    android:text="Bid with : "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ajout"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="236dp"
+                    android:layout_marginEnd="87dp"
+                    android:layout_marginRight="87dp"
+                    android:ems="10"
+                    android:hint="    ..............     (Dinars)" />
+
+                <Button
+                    android:id="@+id/bid"
+                    android:layout_width="70dp"
+                    android:layout_height="34dp"
+
+                    android:layout_below="@+id/initialPrice"
+                    android:layout_alignEnd="@+id/imageView"
+                    android:layout_marginTop="-95dp"
+                    android:layout_marginEnd="-10dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="Confirm"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/currentPrice2"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="437dp"
+                    android:text="Current Price :"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/currentPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="147dp"
+                    android:layout_marginLeft="147dp"
+                    android:layout_marginTop="203dp"
+                    android:text="Current Price"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="153dp"
+                    android:layout_marginLeft="153dp"
+                    android:layout_marginTop="378dp"
+                    android:text="Category"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="154dp"
+                    android:layout_marginLeft="154dp"
+                    android:layout_marginTop="449dp"
+                    android:text="Phone"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="224dp"
+                    android:layout_height="123dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginTop="481dp"
+                    android:text="description"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="153dp"
+                    android:layout_marginLeft="153dp"
+                    android:layout_marginTop="414dp"
+                    android:text="City"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/announcer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginLeft="148dp"
+                    android:layout_marginTop="336dp"
+                    android:text="Announcer "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/announcer1"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginBottom="306dp"
+                    android:text="Announcer :"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/category1"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="263dp"
+                    android:text="Category :"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/brand1"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="194dp"
+                    android:text="Phone :"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/citizens"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginBottom="228dp"
+                    android:text="Location :"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/description1"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/brand"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Description :"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/description2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/brand"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="173dp"
+                    android:background="#d1d1e0"
+                    android:text="© WantIt 2019 | Language : English "
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:textAlignment="center"
+                    android:text="TitleOfTheArticle"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Tooltip"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="88dp"
+                    android:text="Click to see product"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Tooltip"
+                    android:textColor="#FFFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

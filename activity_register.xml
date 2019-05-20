@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/underground"
+    >
+
+
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_name"
+        android:ems="10"
+        android:fadingEdge="horizontal"
+        android:foregroundGravity="top|bottom"
+        android:gravity="top|bottom"
+        android:hint="Username"
+        android:inputType="text|textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp" />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_surname"
+        android:ems="10"
+        android:fadingEdge="horizontal"
+        android:foregroundGravity="top|bottom"
+        android:gravity="top|bottom"
+        android:hint="Name"
+        android:inputType="text|textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <EditText
+        android:id="@+id/et_surname"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_conf_password"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <EditText
+        android:id="@+id/et_conf_password"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_phone"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="172dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:background="#1288ac"
+        android:onClick="OnReg"
+        android:text="Register"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textColor="#fa0820a3"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Welcome " />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:background="#9494e6"
+
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:text="© WantIt 2019 | Langue : Anglais " />
+
+
+</RelativeLayout>
